@@ -1,0 +1,18 @@
+html {
+    /* background-color: black; */
+}
+
+header {
+    color: #98ff98; /* Mint green text color */
+    background-color: black; /* Black background color */
+    padding: 10px 0; /* Adjust padding */
+    text-align: center; /* Center align text */
+  }
+
+  h1 {
+    color: black; /* Set text color to black */
+    background-color: #98ff98; /* Mint green background color */
+    padding: 5px 10px; /* Adjust padding */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
