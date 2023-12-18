@@ -8,8 +8,8 @@ router.get('/:id', async (req, res) => {
       include: [{ model: Comment }]
     });
     res.status(200).json(blogData);
-    if(!blogData) {
-      res.status(404).json({ message: 'No blog found with this ID'});
+    if (!blogData) {
+      res.status(404).json({ message: 'No blog found with this ID' });
       return;
     }
   } catch (err) {

@@ -4,10 +4,10 @@ const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
   Comment.findAll({})
-  .then(commentData => res.json(commentData))
-  .catch(err => {
-    res.status(500).json(err);
-  });
+    .then(commentData => res.json(commentData))
+    .catch(err => {
+      res.status(500).json(err);
+    });
 });
 
 router.get('/:id', (req, res) => {
@@ -16,10 +16,10 @@ router.get('/:id', (req, res) => {
       id: req.params.id
     }
   })
-  .then(commentData => res.json(commentData))
-  .catch(err => {
-    res.status(500).json(err);
-  });
+    .then(commentData => res.json(commentData))
+    .catch(err => {
+      res.status(500).json(err);
+    });
 });
 
 router.post('/', withAuth, async (req, res) => {
