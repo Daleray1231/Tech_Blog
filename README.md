@@ -57,7 +57,7 @@ This is a simple web application built using Express.js, Sequelize ORM, and Hand
 
 ## Deployment
 
-[Github Deployed Application](https://daleray1231.github.io/Tech_Blog/)
+[Heroku Deployed Application](https://blooming-taiga-54403-4daac811aa65.herokuapp.com)
 
 ## Contributing
 
