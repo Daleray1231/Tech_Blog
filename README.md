@@ -8,7 +8,7 @@ This is a simple web application built using Express.js, Sequelize ORM, and Hand
 
    To set up the project locally, follow these steps:
 
-   - Clone the repository.
+   - [Clone](https://github.com/Daleray1231/Tech_Blog)  the repository. 
    - Run `npm install` to install the necessary dependencies.
 
 2. **Database Configuration**
@@ -57,8 +57,7 @@ This is a simple web application built using Express.js, Sequelize ORM, and Hand
 
 ## Deployment
 
-- The application is ready for deployment to platforms like Heroku or other hosting services.
-- Ensure to set environment variables for database credentials and session secret in your deployment environment.
+[Github Deployed Application](https://daleray1231.github.io/Tech_Blog/)
 
 ## Contributing
 
