@@ -1,21 +1,69 @@
-# Tech-Blog
+# Tech Blog Web App
 
-## Description
-This web application is able to capture blogs such as comments, and posts, this web app uses handle bars, js, and css, as well as DB, this app was created for a way for users to sign in, and have a space where they can blog there tech journey or any types of tech info or tips,
+This is a simple web application built using Express.js, Sequelize ORM, and Handlebars.js for templating. The application provides features for user authentication, blog creation, editing, and commenting.
 
-## Link and image
+## Setup
 
-## Usage 
-Clone the code to your local system. add a .env file. npm i in the terminal, run mySQL then run node server and you will be able to view the application 
+1. **Installation**
 
-## Credits 
+   To set up the project locally, follow these steps:
 
-## license 
-MIT License
+   - Clone the repository.
+   - Run `npm install` to install the necessary dependencies.
 
+2. **Database Configuration**
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+   - Ensure you have a MySQL database available.
+   - Create a `.env` file and add your database credentials:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+     ```
+     DB_NAME=your_database_name
+     DB_USER=your_database_user
+     DB_PASSWORD=your_database_password
+     ```
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+3. **Running the App**
+
+   - Execute `npm start` to launch the application.
+   - Access the app via `http://localhost:3001` in your browser.
+
+## File Structure
+
+- **`controllers/`**: Contains routing logic for different parts of the application.
+- **`models/`**: Defines Sequelize models for User, Blog, and Comment entities.
+- **`utils/`**: Houses helper functions and authentication middleware.
+- **`config/`**: Handles database connection and session store configuration.
+
+## Dependencies Used
+
+- **Express**: Web framework for handling HTTP requests.
+- **Express-Handlebars**: Template engine for rendering views.
+- **Sequelize**: ORM for interacting with the MySQL database.
+- **Bcrypt**: Library for password hashing.
+- **Express-Session**: Middleware for managing user sessions.
+- **Connect-Session-Sequelize**: Store for session data in Sequelize.
+
+## Key Features
+
+- **User Authentication**: Registration, login, and session management.
+- **Blogging**: Create, edit, and view blog posts.
+- **Commenting**: Users can comment on blog posts.
+- **Dashboard**: Personalized view for logged-in users to manage their blogs.
+
+## Code Highlights
+
+- `controllers/`: Defines routes for homepage, blog rendering, editing, user authentication, and dashboard display.
+- `models/`: Defines Sequelize models for User, Blog, and Comment entities, with password hashing hooks and validations.
+
+## Deployment
+
+- The application is ready for deployment to platforms like Heroku or other hosting services.
+- Ensure to set environment variables for database credentials and session secret in your deployment environment.
+
+## Contributing
+
+Contributions are welcome! Fork the repository, make changes, and create a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
