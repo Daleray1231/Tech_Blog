@@ -1,9 +1,7 @@
-<!-- Loop over each object in the projects array -->
 {{#each blogs as |blog| }}
 <div class="blog">
   <div class="card">
     <h3>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
       {{{get_emoji}}}
       <a href="/blog/{{blog.id}}">{{blog.name}}</a>
     </h3>
